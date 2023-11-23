@@ -1,0 +1,494 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile di base*/ 
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+/* Tipografia */
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 45px;
+  margin: .67em 0;
+}
+
+h2 {
+  font-size: 2.1875em;
+  font-weight: 600;
+  color: #E29578;
+}
+
+h3 {
+  font-size: 1.875em;
+  font-weight: normal;
+  color: #E29578;
+}
+
+p {
+  margin-bottom: 15px;
+  margin-left: 1px;
+  text-align: center;
+}
+
+a {
+  font-size: 1.12em;
+  font-weight: 600;
+  line-height: 32px;
+  color: #E29578;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7899D4;
+}
+
+.button {
+  /* stile per il pulsante*/
+  color: #333;
+  background-color: #E29578;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: 3px solid #E29578;
+  border-radius: 30px;
+  margin-left: auto;
+}
+
+.button:hover {
+  background-color: #7899D4;
+  color: #333;
+}
+
+/* Layout */ 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+
+/* header */
+
+.header {
+  /* stile per l'header */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-container {
+  /* stile per il contenitore dell'header */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.logo {
+   /* stile per il logo */
+  padding-left: 10px;
+  margin-right: 40px;
+  font-size: 1.625em;
+  font-weight: 600;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 30px;
+}
+
+
+.menu ul {
+  /* stile per la lista del menu */
+  list-style-type: none;
+  display: flex;
+  margin-left: 10px;
+
+}
+
+.menu ul li {
+  /* stile per gli elementi della lista del menu */
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  /* stile per l'ultimo elemento della lista del menu */
+  margin-right: 0;
+}
+
+.menu ul li a {
+  /* stile per i link del menu */
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu ul li:last-child a {
+  color: #ced4da;
+}
+
+.menu ul li a:hover {
+   /* stile per il link del menu al passaggio del mouse */
+  color: #7D84B2;
+  text-decoration: underline;
+}
+
+/* Sezione Hero */
+
+.hero {
+  /* stile per la sezione Hero */
+  height: 100vh;
+}
+
+.hero-contenuto {
+  /* stile per il contenuto della sezione Hero */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spazio {
+  margin-top: 50px;
+}
+
+.sottolineare {
+   /* stile per testo sottolineato */
+  color: #E29578;
+}
+
+/* Sezione lavori */
+
+.lavori {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center; 
+
+  gap: 20px;
+}
+
+.titolo h2 {
+  margin-right: 10px;
+  /* Aggiunto margine destro per separare l'H2 dalle tessere */
+}
+
+.progetti {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.progetto-scheda {
+  width: 300px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  margin-bottom: 10px
+}
+
+.progetto-scheda h3 {
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}
+
+.progetto-scheda p {
+  font-size: 0.875em;
+  color: #888;
+}
+
+.progetto-scheda img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+/* Sezione chi sono */
+
+.chi-contenuto {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profilo-img {
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 1,25em;
+  border-radius: 300px;
+  margin-top: 50px;
+}
+
+.social-icone {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icone a {
+  margin: 0 10px;
+
+}
+
+.contacts-content {
+  display: flex;
+  text-align: center; 
+
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px ;
+}
+
+/* Stile per la parte di descrizione a sinistra */
+.contacts-about {
+  text-align: center; 
+  flex: 1;
+  max-width: 400px;
+  padding-bottom: 20px; 
+  align-self: flex-start;
+}
+
+/* Stile per il form a destra */
+.contacts-form {
+  text-align: center; 
+  flex: 1;
+  max-width: 400px;
+  margin: auto;
+}
+
+.input-label {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.input-field,
+.input-textarea {
+  font-family: 'Inter';
+  font-size: 0.9375em;
+  color: black;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.input-textarea {
+  height: 100px;
+}
+
+/*footer*/
+
+footer {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #7899D4;
+}
+
+
+/* MEDIA QUERY */
+/* media query mobile su standard dei 576px */
+@media screen and (max-width: 576px) {
+ 
+  /* elementi di tipografia */
+  h1 {
+    font-size: 1.4em;
+    line-height: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+
+  h4 {
+   font-size: 0.8em;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 1px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* sezione dei lavori */
+  .progetto-scheda {
+    max-width: 200px;
+  }
+
+  .progetto-scheda p {
+    font-size: 0.8em;
+  }
+
+  /* contacts content */
+  
+  .contacts-content {
+    flex-direction: column;
+
+  }
+  .contacts-form {
+    margin-top: 30px;
+  }
+  .profilo-img {
+    display: none
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  /* Stili per schermi con larghezza massima di 767px (es. dispositivi mobile) */
+   /* elementi di tipografia */
+   h1 {
+    font-size: 1.4em;
+    line-height: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+
+  h4 {
+   font-size: 0.8em;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 1px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* sezione dei lavori */
+  .progetto-scheda {
+    max-width: 200px;
+  }
+
+  .progetto-scheda p {
+    font-size: 0.8em;
+  }
+
+  /* contacts content */
+  
+  .contacts-content {
+    flex-direction: column;
+
+  }
+  .contacts-form {
+    margin-top: 30px;
+  }
+  .profilo-img {
+    display: none
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Stili per schermi con larghezza compresa tra 768px e 991px (es. tablet) */
+   /* elementi di tipografia */
+   h1 {
+    font-size: 1.4em;
+    line-height: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+
+  h4 {
+   font-size: 0.8em;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 1px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* sezione dei lavori */
+  .progetto-scheda {
+    max-width: 200px;
+  }
+
+  .progetto-scheda p {
+    font-size: 0.8em;
+  }
+
+  /* contacts content */
+  
+  .contacts-content {
+    flex-direction: column;
+
+  }
+  .contacts-form {
+    margin-top: 30px;
+  }
+  .profilo-img {
+    display: none
+  }
+}
+

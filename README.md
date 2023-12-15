@@ -14,7 +14,7 @@ Il progetto mira a catturare l'attenzione di professionisti HR e chiunque sia in
 
 ## Struttura delle Directory
 
-'''markdown
+```markdown
 |-- assets/
 |   |-- css/
 |   |   |-- style.css
@@ -42,17 +42,4 @@ Il progetto mira a catturare l'attenzione di professionisti HR e chiunque sia in
 - **`/chisono`**: Questa directory contiene una pagina separata che fornisce informazioni su di me. Il file `index.html` è la pagina principale di questa sezione.
 
 - **`index.html`**: Questo è il file principale del mio sito web. Contiene la struttura HTML della pagina principale e collega gli stili CSS e altri file necessari.
-
-## Contribuisci
-Se hai suggerimenti per migliorare il mio portfolio o desideri contribuire con nuove funzionalità, sarei più che felice di accogliere il tuo contributo! Segui questi passaggi:
-
-1. Fai il fork del repository.
-2. Crea un branch per le tue modifiche: git checkout -b feature/nuova-funzionalita.
-3. Committa i tuoi cambiamenti: git commit -m 'Aggiunta di una nuova funzionalità'.
-4. Pusha il tuo branch: git push origin feature/nuova-funzionalita.
-5. Apri una Pull Request nel mio repository.
-
-## Contatti
-Linkedin: www.linkedin.com/in/francescociocchetti
-
 

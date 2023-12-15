@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Stile di base*/ 
+/* Stile di base*/
 body {
   background-color: #f5f5f5;
   color: #333;
@@ -37,7 +37,6 @@ h3 {
 p {
   margin-bottom: 15px;
   margin-left: 1px;
-  text-align: center;
 }
 
 a {
@@ -56,12 +55,12 @@ a:hover {
   /* stile per il pulsante*/
   color: #333;
   background-color: #E29578;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 3px solid #E29578;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-left: auto;
 }
 
@@ -70,13 +69,17 @@ a:hover {
   color: #333;
 }
 
-/* Layout */ 
+/* Layout */
 .container {
   width: 80%;
   margin: 0 auto;
   max-width: 1140px;
 }
 
+section {
+  padding-bottom: 64px;
+
+}
 
 /* header */
 
@@ -96,13 +99,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  
+
   padding: 10px 20px;
   height: 100%;
 }
 
 .logo {
-   /* stile per il logo */
+  /* stile per il logo */
   padding-left: 10px;
   margin-right: 40px;
   font-size: 1.625em;
@@ -142,7 +145,7 @@ a:hover {
 }
 
 .menu ul li a:hover {
-   /* stile per il link del menu al passaggio del mouse */
+  /* stile per il link del menu al passaggio del mouse */
   color: #7D84B2;
   text-decoration: underline;
 }
@@ -169,17 +172,20 @@ a:hover {
 }
 
 .sottolineare {
-   /* stile per testo sottolineato */
+  /* stile per testo sottolineato */
   color: #E29578;
 }
 
+.sottolineareblu {
+  color:#7899D4;
+}
 /* Sezione lavori */
 
 .lavori {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center; 
+  text-align: center;
 
   gap: 20px;
 }
@@ -197,6 +203,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .progetto-scheda {
   width: 300px;
   background-color: #f5f5f5;
@@ -238,7 +245,7 @@ a:hover {
 .profilo-img {
   max-width: 100%;
   max-height: 300px;
-  margin-bottom: 1,25em;
+  margin-bottom: 1, 25em;
   border-radius: 300px;
   margin-top: 50px;
 }
@@ -256,25 +263,59 @@ a:hover {
 
 .contacts-content {
   display: flex;
-  text-align: center; 
+  text-align: center;
 
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
 }
 
 /* Stile per la parte di descrizione a sinistra */
 .contacts-about {
-  text-align: center; 
+  text-align: center;
   flex: 1;
   max-width: 400px;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
   align-self: flex-start;
+}
+
+/* Stile per la sezione Curriculum */
+.cv {}
+
+.cv-item {}
+
+.cv-item-tags {
+  font-size: 1em;
+  color: #E29578;
+}
+
+.cv-info {
+  display: flex;
+}
+
+.cv-info-label {
+  width: 200px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cv-info-content {
+  width: 70%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.skill { 
+  margin-right: 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
 }
 
 /* Stile per il form a destra */
 .contacts-form {
-  text-align: center; 
+  text-align: center;
   flex: 1;
   max-width: 400px;
   margin: auto;
@@ -335,13 +376,13 @@ footer ul li a:hover {
 /* MEDIA QUERY */
 /* media query mobile su standard dei 576px */
 @media screen and (max-width: 576px) {
- 
+
   /* elementi di tipografia */
   h1 {
     font-size: 1.4em;
     line-height: 30px;
   }
-  
+
   h2 {
     font-size: 1.5em;
   }
@@ -351,7 +392,7 @@ footer ul li a:hover {
   }
 
   h4 {
-   font-size: 0.8em;
+    font-size: 0.8em;
   }
 
   a {
@@ -373,14 +414,16 @@ footer ul li a:hover {
   }
 
   /* contacts content */
-  
+
   .contacts-content {
     flex-direction: column;
 
   }
+
   .contacts-form {
     margin-top: 30px;
   }
+
   .profilo-img {
     display: none
   }
@@ -388,13 +431,14 @@ footer ul li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+
   /* Stili per schermi con larghezza massima di 767px (es. dispositivi mobile) */
-   /* elementi di tipografia */
-   h1 {
+  /* elementi di tipografia */
+  h1 {
     font-size: 1.4em;
     line-height: 30px;
   }
-  
+
   h2 {
     font-size: 1.5em;
   }
@@ -404,7 +448,7 @@ footer ul li a:hover {
   }
 
   h4 {
-   font-size: 0.8em;
+    font-size: 0.8em;
   }
 
   a {
@@ -426,27 +470,30 @@ footer ul li a:hover {
   }
 
   /* contacts content */
-  
+
   .contacts-content {
     flex-direction: column;
 
   }
+
   .contacts-form {
     margin-top: 30px;
   }
+
   .profilo-img {
     display: none
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* Stili per schermi con larghezza compresa tra 768px e 991px (es. tablet) */
-   /* elementi di tipografia */
-   h1 {
+  /* elementi di tipografia */
+  h1 {
     font-size: 1.4em;
     line-height: 30px;
   }
-  
+
   h2 {
     font-size: 1.5em;
   }
@@ -456,7 +503,7 @@ footer ul li a:hover {
   }
 
   h4 {
-   font-size: 0.8em;
+    font-size: 0.8em;
   }
 
   a {
@@ -478,16 +525,17 @@ footer ul li a:hover {
   }
 
   /* contacts content */
-  
+
   .contacts-content {
     flex-direction: column;
 
   }
+
   .contacts-form {
     margin-top: 30px;
   }
+
   .profilo-img {
     display: none
   }
 }
-

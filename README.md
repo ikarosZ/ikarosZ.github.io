@@ -14,6 +14,7 @@ Il progetto mira a catturare l'attenzione di professionisti HR e chiunque sia in
 
 ## Struttura delle Directory
 
+'''markdown
 |-- assets/
 |   |-- css/
 |   |   |-- style.css

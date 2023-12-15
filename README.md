@@ -51,7 +51,7 @@ Se hai suggerimenti per migliorare il mio portfolio o desideri contribuire con n
 4. Pusha il tuo branch: git push origin feature/nuova-funzionalita.
 5. Apri una Pull Request nel mio repository.
 
-##Contatti
+## Contatti
 Linkedin: www.linkedin.com/in/francescociocchetti
 
 
